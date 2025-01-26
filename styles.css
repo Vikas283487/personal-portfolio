@@ -1,0 +1,250 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Dark theme styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color for contrast */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: transparent; /* No background for header */
+    padding: 10px 0;
+    box-shadow: none; /* No box shadow for the header */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+header nav ul li a:hover {
+    color: #4fa3f7; /* Light blue color on hover */
+}
+
+header nav ul li a:focus {
+    outline: none; /* Remove the default focus outline */
+    color: #4fa3f7; /* Light blue color on focus */
+}
+
+/* About Section */
+#about {
+    background-color: rgba(18, 8, 39, 1); /* Dark purple background */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-img {
+    width: 200px; /* Adjust width to fit the design */
+    height: 200px; /* Keep it square by matching the height with width */
+    object-fit: cover; /* Ensures image is cropped properly */
+    border: 4px solid #fff; /* White border around the image */
+}
+
+.about-text h2 {
+    color: #fff; /* White text for the heading */
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #b0b0b0; /* Lighter gray for text */
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
+    .about-img {
+        width: 150px; /* Smaller image on smaller screens */
+        height: 150px; /* Maintain square shape */
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+}
+
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Home Section Styling (Inside Box) */
+#home {
+    background-color: #003366; /* Dark blue background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+#home h1 {
+    color: #fff; /* White color for heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+   
+}
+
+#home p {
+    color: #b0b0b0; /* Lighter text for description */
+}
+
+
+/* Project Section (Using rgba(18, 8, 39, 1)) */
+#projects {
+    background-color: rgb(86, 17, 233); /* Very dark purple background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(83, 200, 206, 0.3);
+}
+
+.project {
+    background-color: #333; /* Dark background for individual projects */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(175, 175, 175);
+}
+
+.project h3 {
+    color: #ffffff;
+}
+
+.project p {
+    color: #fcfcfc; /* Lighter text for project description */
+}
+
+.project a {
+    color: #2df113; /* Light blue for links */
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+#skills {
+    background-color: rgb(2, 62, 86); /* Very dark purple background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(3, 0, 0, 0.3);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+ul li {
+    background-color: #0a0505;
+    color: #f8f7f7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Experience Section */
+#experience {
+    background-color: rgb(28, 0, 38); /* Very dark purple background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.967);
+}
+
+.job {
+    background-color: #0b0b0b;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.job h3 {
+    color: #fcfcfc;
+}
+
+.job p {
+    color: #fbfbfb;
+}
+
+/* Contact Section */
+#contact {
+    background-color: rgba(18, 8, 39, 1); /* Very dark purple background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#contact a {
+    color: #4fa3f7;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #4fa3f7;
+}
